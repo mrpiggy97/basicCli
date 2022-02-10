@@ -12,3 +12,7 @@ var RootCmd *cobra.Command = &cobra.Command{
 	Use:     "basicCli",
 	Version: "v1.0.0",
 }
+
+func init() {
+	RootCmd.AddCommand(personCmd)
+}
